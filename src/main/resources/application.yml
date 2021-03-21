@@ -1,0 +1,35 @@
+micronaut:
+  ssl:
+    enabled: false
+    key-store:
+      path: classpath:hornsup-raspi-esp01-keystore.jks
+      type: JKS
+      password: monday1
+    # buildSelfSigned: true
+    port: 80
+  server:
+    #dualProtocol: true
+    port: 80
+    cors:
+      enabled: true
+  application:
+    name: raspi-esp01-endpoint
+  metrics:
+    enabled: true
+
+datasources:
+  default:
+    url: jdbc:postgresql://192.168.100.124:5432/finance_db
+    driverClassName: org.postgresql.Driver
+    username: henninb
+    password: monday1
+    schema-generate: NONE
+    dialect: POSTGRES
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate
+        show_sql: true
