@@ -28,6 +28,10 @@ class Weather {
     @field:Size(min = 3, max = 40)
     var temperature: String = "";
 
+    @JsonProperty
+    @field:Size(min = 3, max = 40)
+    var humidity: String = "";
+
     override fun toString(): String {
         return mapper.writeValueAsString(this)
     }
