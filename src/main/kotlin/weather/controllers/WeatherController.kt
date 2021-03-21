@@ -1,4 +1,4 @@
-package finance.controllers
+package weather.controllers
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.micronaut.context.annotation.Parameter
@@ -8,7 +8,7 @@ import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.*
 import io.micronaut.http.server.exceptions.ExceptionHandler
 import org.slf4j.LoggerFactory
-import finance.domain.Weather
+import weather.domain.Weather
 import java.util.*
 import javax.inject.Inject
 

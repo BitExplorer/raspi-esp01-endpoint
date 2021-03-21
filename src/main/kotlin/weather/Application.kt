@@ -1,4 +1,4 @@
-package finance
+package weather
 
 import io.micronaut.runtime.Micronaut
 
