@@ -16,11 +16,6 @@ import javax.validation.constraints.Size
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Weather {
-
-    // @JsonProperty
-    // @field:Min(value = 0L)
-    // var accountId: Long = 0L;
-
     @JsonProperty
     @field:Size(min = 3, max = 40)
     var location: String = "";
@@ -32,12 +27,8 @@ class Weather {
     @JsonProperty
     @field:Size(min = 3, max = 40)
     var temperature: String = "";
-    // constructor() : this(
-    //   0L, "", "", ""
-    // )
 
     override fun toString(): String {
-        //mapper.setTimeZone(TimeZone.getDefault())
         return mapper.writeValueAsString(this)
     }
 

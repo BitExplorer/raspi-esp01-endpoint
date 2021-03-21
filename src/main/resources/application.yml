@@ -1,12 +1,4 @@
 micronaut:
-  ssl:
-    enabled: false
-    key-store:
-      path: classpath:hornsup-raspi-esp01-keystore.jks
-      type: JKS
-      password: monday1
-    # buildSelfSigned: true
-    port: 80
   server:
     #dualProtocol: true
     port: 8080

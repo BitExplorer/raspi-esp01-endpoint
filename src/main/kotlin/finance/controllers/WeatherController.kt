@@ -13,12 +13,12 @@ import java.util.*
 import javax.inject.Inject
 
 @Controller
-class AccountController {
+class WeatherController {
 
     @Post(value = "/weather", produces = ["application/json"])
     fun insertAccount(@Body weather: Weather): HttpResponse<String> {
         println(weather);
-        return HttpResponse.ok("account inserted")
+        return HttpResponse.ok("weather data collected")
     }
 
     companion object {
