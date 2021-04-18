@@ -8,6 +8,7 @@ import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.*
 import io.micronaut.http.server.exceptions.ExceptionHandler
 import org.slf4j.LoggerFactory
+import weather.domain.Gps
 import weather.domain.Weather
 import java.util.*
 import javax.inject.Inject
@@ -17,7 +18,7 @@ class WeatherController {
 
     @Post(value = "/weather", produces = ["application/json"])
     fun insertAccount(@Body weather: Weather): HttpResponse<String> {
-        println(weather);
+        println(weather)
         return HttpResponse.ok("weather data collected")
     }
 

@@ -9,7 +9,7 @@ import javax.persistence.*
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class Weather {
+class Gps {
     @Id
     @JsonProperty
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,19 +17,15 @@ class Weather {
 
     @JsonProperty
     @field:Size(min = 3, max = 40)
-    var location: String = "";
+    var timestamp: String = ""
 
     @JsonProperty
     @field:Size(min = 3, max = 40)
-    var timestamp: String = "";
+    var longitude: String = ""
 
     @JsonProperty
     @field:Size(min = 3, max = 40)
-    var temperature: String = "";
-
-    @JsonProperty
-    @field:Size(min = 3, max = 40)
-    var humidity: String = "";
+    var latitude: String = ""
 
     override fun toString(): String {
         return mapper.writeValueAsString(this)

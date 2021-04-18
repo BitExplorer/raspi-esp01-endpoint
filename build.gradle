@@ -37,7 +37,6 @@ dependencies {
     implementation("io.micronaut.data:micronaut-data-model:$micronautDataVersion")
     implementation("io.micronaut.data:micronaut-data-hibernate-jpa:$micronautDataVersion")
 
-
     //Validation
     implementation("javax.validation:validation-api:${validationVersion}")
     implementation("org.hibernate:hibernate-validator:5.2.4.Final")
@@ -98,6 +97,9 @@ compileTestKotlin {
     targetCompatibility = JavaVersion.VERSION_11
     kotlinOptions.jvmTarget = JavaVersion.VERSION_11
 }
+
+kapt.includeCompileClasspath = false
+
 kapt {
     arguments {
         arg("micronaut.processing.incremental", true)
@@ -122,3 +124,4 @@ tasks.withType(JavaExec) {
         )
     }
 }
+
