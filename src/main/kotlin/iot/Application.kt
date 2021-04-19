@@ -1,4 +1,4 @@
-package weather
+package iot
 
 import io.micronaut.runtime.Micronaut
 

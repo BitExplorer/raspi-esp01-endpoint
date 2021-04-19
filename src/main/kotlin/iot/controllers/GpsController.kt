@@ -1,10 +1,10 @@
-package weather.controllers
+package iot.controllers
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.micronaut.http.HttpResponse
 import io.micronaut.http.annotation.*
-import weather.domain.Gps
-import weather.services.GpsService
+import iot.domain.Gps
+import iot.services.GpsService
 import javax.inject.Inject
 
 

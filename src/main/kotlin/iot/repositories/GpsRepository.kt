@@ -1,7 +1,7 @@
-package weather.repositories
+package iot.repositories
 
 
-import weather.domain.Gps
+import iot.domain.Gps
 import io.micronaut.data.annotation.Repository
 import io.micronaut.data.jpa.repository.JpaRepository
 

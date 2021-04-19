@@ -1,4 +1,4 @@
-package weather.domain
+package iot.domain
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
@@ -9,7 +9,7 @@ import javax.persistence.*
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-class Gps {
+class Weather {
     @Id
     @JsonProperty
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,15 +17,19 @@ class Gps {
 
     @JsonProperty
     @field:Size(min = 3, max = 40)
-    var timestamp: String = ""
+    var location: String = "";
 
     @JsonProperty
     @field:Size(min = 3, max = 40)
-    var longitude: String = ""
+    var timestamp: String = "";
 
     @JsonProperty
     @field:Size(min = 3, max = 40)
-    var latitude: String = ""
+    var temperature: String = "";
+
+    @JsonProperty
+    @field:Size(min = 3, max = 40)
+    var humidity: String = "";
 
     override fun toString(): String {
         return mapper.writeValueAsString(this)

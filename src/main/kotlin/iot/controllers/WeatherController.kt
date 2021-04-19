@@ -1,4 +1,4 @@
-package weather.controllers
+package iot.controllers
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.micronaut.context.annotation.Parameter
@@ -8,8 +8,8 @@ import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.*
 import io.micronaut.http.server.exceptions.ExceptionHandler
 import org.slf4j.LoggerFactory
-import weather.domain.Gps
-import weather.domain.Weather
+import iot.domain.Gps
+import iot.domain.Weather
 import java.util.*
 import javax.inject.Inject
 

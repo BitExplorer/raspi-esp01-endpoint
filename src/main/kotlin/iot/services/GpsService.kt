@@ -1,7 +1,7 @@
-package weather.services
+package iot.services
 
-import weather.domain.Gps
-import weather.repositories.GpsRepository
+import iot.domain.Gps
+import iot.repositories.GpsRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 
