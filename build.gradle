@@ -13,7 +13,6 @@ group "finance"
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 configurations {
@@ -69,7 +68,7 @@ dependencies {
 
 test.classpath += configurations.developmentOnly
 
-mainClassName = "weather.Application"
+mainClassName = "iot.Application"
 
 // use JUnit 5 platform
 test {

@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.ObjectMapper
 import javax.validation.constraints.Size
 import javax.persistence.*
+import java.sql.Timestamp
 
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -17,7 +18,7 @@ class Gps {
 
     @JsonProperty
     @field:Size(min = 3, max = 40)
-    var timestamp: String = ""
+    var timestamp: Timestamp = Timestamp(0)
 
     @JsonProperty
     @field:Size(min = 3, max = 40)
